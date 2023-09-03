@@ -25,7 +25,7 @@ print(json.dumps(users, indent=2))
 
 #Transform
 
-openai.api_key="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"
+openai.api_key="hidden"
 
 def generate_ai_news(user):
     completion = openai.ChatCompletion.create(
