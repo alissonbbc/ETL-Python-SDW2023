@@ -10,8 +10,9 @@ import openai
 # Repositório da API: https://github.com/digitalinnovationone/santander-dev-week-2023-api
 sdw2023_api_url = "https://sdw-2023-prd.up.railway.app"
 
+df=pd.read_csv(r"ETL-Python-SDW2023\.csv\usuarios.csv")
 #df=pd.read_csv("usuarios.csv")
-df=pd.read_csv(r"D:\Trabalho\Curso Ciência de Dados\ETL-Python-SDW2023\.csv\usuarios.csv")
+#df=pd.read_csv(r"D:\Trabalho\Curso Ciência de Dados\ETL-Python-SDW2023\.csv\usuarios.csv")
 user_ids=df['UserID'].tolist()
 print (user_ids)
 
@@ -25,7 +26,7 @@ print(json.dumps(users, indent=2))
 
 #Transform
 
-openai.api_key="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"
+openai.api_key="hidden"
 
 def generate_ai_news(user):
     completion = openai.ChatCompletion.create(

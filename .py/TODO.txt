@@ -1,0 +1,1 @@
+criar versão pública e adicionar inicial no gitignore
